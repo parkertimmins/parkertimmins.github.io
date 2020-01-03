@@ -1,0 +1,13 @@
+---
+layout: default
+title: Projects
+---
+
+<div class="projects-column">
+    {% for project in site.data.projects %}
+     <a class="site-link" href="{{project.link}}">
+          <img src="{{site.baseurl}}/assets/images/projects/{{project.image}}">
+          <label>{{project.name}}</label>
+      </a>
+	{% endfor %}
+</div>

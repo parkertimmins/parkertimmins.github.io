@@ -72,6 +72,14 @@ body {
     max-width: 740px;
 }
 
+.projects-column {
+	@extend .center-column;
+
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;	
+}
+
 .post-body {
    font-family: Georgia,"Times New Roman",serif;
     font-size: 18px;
@@ -87,5 +95,20 @@ body {
 pre.highlight {
     white-space: pre;
     overflow-x: scroll;
+}
+
+.site-link {
+    margin: 10px;
+}
+
+.site-link img {
+    border-radius: 4px;
+    width: 200px;
+    height: 124px;
+}
+
+.site-link label {
+    display: block;
+    text-align: center;
 }
 
