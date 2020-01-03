@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="FeaturedImgBanner" {% if page.featured-img %} style="background-image: url('{{ page.featured-img }}');" {% endif %}> 
+<!-- Include your post title, byline, date, and other info inside the header here. -->
+</div>
+<div class="center-column"> 
+	<h1 class="post-title">
+		{{ page.title }}
+	</h1>
+	<div class="post-body">
+		{{ content }}
+	</div>
+</div>

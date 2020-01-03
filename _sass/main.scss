@@ -1,0 +1,91 @@
+$wordpress-sans-serif-font: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;    
+
+$wordpress-green: #306363;
+
+@mixin wordpress-font {
+	color: $wordpress-green;
+	font-family: $wordpress-sans-serif-font;
+}
+
+.current {
+    color: #003936;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-date {
+    margin: auto;
+}
+
+nav {
+	text-align: center;
+    height: 45px;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+	background: $wordpress-green;
+
+    a {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+		font-family: $wordpress-sans-serif-font;
+		color: silver;
+       	font-size: 17px;
+        font-weight: 700;
+    }
+    
+}
+
+h1, h2, h3, h4, h5 {
+	@include wordpress-font;
+}
+
+.post-title {
+	text-align: center;
+    font-size: 47px;
+	@include wordpress-font;
+}
+
+iframe.map-frame {
+	border: none;
+}
+
+body {
+    margin: 0;
+}
+
+.FeaturedImgBanner {
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: contains;
+	
+	height: 400px;
+}
+
+.center-column {
+	margin: auto;
+    max-width: 740px;
+}
+
+.post-body {
+   font-family: Georgia,"Times New Roman",serif;
+    font-size: 18px;
+    line-height: 1.75;
+
+    img {
+        margin: auto;
+        display:block;
+    } 
+}
+
+/* for rouge highlighted code blocks */
+pre.highlight {
+    white-space: pre;
+    overflow-x: scroll;
+}
+
