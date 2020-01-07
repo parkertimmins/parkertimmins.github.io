@@ -1,10 +1,13 @@
-$wordpress-sans-serif-font: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;    
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Raleway&display=swap');
 
 $wordpress-green: #306363;
 
+$grey-text: #505050;
+
+
 @mixin wordpress-font {
 	color: $wordpress-green;
-	font-family: $wordpress-sans-serif-font;
+    font-family: 'Raleway', sans-serif;
 }
 
 .current {
@@ -30,15 +33,23 @@ nav {
 	background: $wordpress-green;
 
     a {
+	    @include wordpress-font;
         padding-left: 10px;
         padding-right: 10px;
         text-decoration: none;
-		font-family: $wordpress-sans-serif-font;
 		color: silver;
        	font-size: 17px;
         font-weight: 700;
     }
     
+}
+
+.posts {
+    color: $grey-text;
+
+    a {
+	    @include wordpress-font;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -77,13 +88,20 @@ body {
 
 	margin-top: 50px;
 	display: flex;
+    flex-wrap: wrap;
 	justify-content: center;	
+
+    a, label {
+	    @include wordpress-font;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
 
 .post-body {
-   font-family: Georgia,"Times New Roman",serif;
     font-size: 18px;
     line-height: 1.75;
+    color: $grey-text;
 
     img {
         margin: auto;
@@ -92,19 +110,24 @@ body {
 }
 
 /* for rouge highlighted code blocks */
-pre.highlight {
+pre.highlight pre { 
     white-space: pre;
     overflow-x: scroll;
+    font-family: 'Inconsolata', monospace;
+
 }
+
 
 .site-link {
     margin: 10px;
+    font-weight: bold;
 }
 
 .site-link img {
-    border-radius: 4px;
+    border-radius: 10px;
     width: 200px;
     height: 124px;
+    border: darkgray solid 2px;
 }
 
 .site-link label {

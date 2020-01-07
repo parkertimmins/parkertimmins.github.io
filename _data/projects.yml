@@ -1,9 +1,12 @@
 - name: Lambda Interpreter 
   link: https://parkertimmins.github.io/lambda_interpreter/
-  image: lambda.png    
+  image: lambda.jpg
 - name: Austin Aerial Imagery 1940
   link: http://parkertimmins.com/maps/austin.html 
-  image: austin_maps.png
+  image: austin_maps.jpg
 - name: Sliding Squares 
   link: https://parkertimmins.github.io/toy-shop/sliding_squares/sliding-squares.html 
   image: sliding_squares.png
+- name: Dronograph 
+  link: https://parkertimmins.github.io/dronograph/ 
+  image: dronograph.jpg
