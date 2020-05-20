@@ -10,3 +10,6 @@
 - name: Dronograph 
   link: https://parkertimmins.github.io/dronograph/ 
   image: dronograph.jpg
+- name: Fractal Explorer 
+  link: https://parkertimmins.github.io/fractal-explorer/ 
+  image: fractal_explorer.png
