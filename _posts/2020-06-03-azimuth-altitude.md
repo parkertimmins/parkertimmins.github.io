@@ -60,7 +60,7 @@ they don't require a distance since they just describe a direction.
 
 First we'll find Azimuth. Look at the current direction vector from above:
 
-![Azimuth angle]({{site.baseurl}}/assets/images/posts/azimuth_altitude/azimuth_angle.jpg "Azimuth angle"){:height="80%" width="80%"}
+![Azimuth angle]({{site.baseurl}}/assets/images/posts/azimuth_altitude/azimuth_angle.jpg "Azimuth angle (feel free to ingore that direction is mispelled twice)"){:height="80%" width="80%"}
 
 We know that $$ \tan(\theta) = \dfrac{y}{x} $$ , or $$ \theta = \arctan(\dfrac{y}{x}) $$
 
