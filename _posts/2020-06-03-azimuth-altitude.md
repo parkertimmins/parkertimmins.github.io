@@ -44,7 +44,7 @@ A good way to describe directions in 3d is a 3d vector. So we want a vector for 
 ![Direction Vector]({{site.baseurl}}/assets/images/posts/azimuth_altitude/direction_vector.jpg "Direction Vector"){:height="80%" width="80%"}
 
 The quaternion describes how to rotate the phone from the default orientation to the current orientation, but it really can be used to rotate anything.
-For example it could be used to rotate a vector descibing which way the camera points when the phone is in the default orientation. What would such a vector look like?
+For example it could be used to rotate a vector describing which way the camera points when the phone is in the default orientation. What would such a vector look like?
 Well it's just a vector that points straight down. So the X and Y values need to be 0 and the Z values needs to be negatives. Such as [0, 0, -1].
 Let's call this vector the default direction vector. If we rotate it by the sensor's quaternion, the result is the current direction vector.
 
@@ -64,7 +64,7 @@ First we'll find Azimuth. Look at the current direction vector from above:
 
 We know that $$ \tan(\theta) = \dfrac{y}{x} $$ , or $$ \theta = \arctan(\dfrac{y}{x}) $$
 
-Well use the arctan2 function which takes into account the signs of both y and x, so it provides a $$ \theta $$ for all the way around the circle.
+We'll use the arctan2 function which takes into account the signs of both y and x, so it provides a $$ \theta $$ for all the way around the circle.
 The $$ \theta $$ we have here has a few problems. It's values is between $$ \pi $$ and $$ -\pi $$, it goes in the wrong direction (half clockwise, half counter-clockwise), and starts at the wrong spot (East rather than North). It requires some massaging to get in the right form ([0, $$ 2\pi $$] clockwise from North), but that's pretty simple, I'll leave it as an exercise for the reader. So, now we have the azimuth.
 
 ![Altitude angle]({{site.baseurl}}/assets/images/posts/azimuth_altitude/altitude_angle.jpg "Altitude angle"){:height="80%" width="80%"}
@@ -72,8 +72,11 @@ The $$ \theta $$ we have here has a few problems. It's values is between $$ \pi 
 Now let's find the Altitude. Similar to Azimuth we'll need the two non-hypotenuse sides of a right triangle to get the angle. One side will be Z component
 of the vector. But the other part of the triangle is a combination of the X and Y components depending on the direction.
 Use the ol' pythagorean theorem to find the length of the bottom arm of the triangle. That value is $$ \sqrt{x^2 + y^2} $$ so this 
-time $$ \theta = \arctan(\dfrac{y}{\sqrt{x^2 + y^2}}) $$
+time $$ \theta = \arctan(\dfrac{z}{\sqrt{x^2 + y^2}}) $$
 And thats' the altitude.
+
+
+
 
  
 
