@@ -4,7 +4,7 @@ title: Converting phone orientation quaternion to Azimuth/Altitude
 featured-img: "/assets/images/oasis_sunset.jpg"
 ---
 
-I've been working on a [project](https://github.com/parkertimmins/sun-gps) that involves measuring the location of an object in the sky using a mobile phone. The idea is to point the camera on the back of a phone
+I've been working on a [project](https://github.com/parkertimmins/celestial-gps) that involves measuring the location of an object in the sky using a mobile phone. The idea is to point the camera on the back of a phone
 at an object and get a measurement of where the object is. 
 
 
