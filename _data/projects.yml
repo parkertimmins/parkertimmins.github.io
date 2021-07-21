@@ -1,15 +1,15 @@
 - name: Lambda Interpreter 
-  link: https://parkertimmins.github.io/lambda_interpreter/
+  link: https://www.parkertimmins.com/lambda_interpreter/
   image: lambda.jpg
-- name: Austin Aerial Imagery 1940
-  link: http://parkertimmins.com/maps/austin.html 
-  image: austin_maps.jpg
-- name: Sliding Squares 
-  link: https://parkertimmins.github.io/toy-shop/sliding_squares/sliding-squares.html 
-  image: sliding_squares.png
 - name: Dronograph 
-  link: https://parkertimmins.github.io/dronograph/ 
+  link: http://www.parkertimmins.com/dronograph/  # needs to be http since map server is http
   image: dronograph.jpg
 - name: Fractal Explorer 
-  link: https://parkertimmins.github.io/fractal-explorer/ 
+  link: https://www.parkertimmins.com/fractal-explorer/ 
   image: fractal_explorer.png
+- name: Austin Aerial Imagery 1940
+  link: https://www.parkertimmins.com/austin-aerial-imagery/austin.html
+  image: austin_maps.jpg
+- name: Sliding Squares 
+  link: https://www.parkertimmins.com/toy-shop/sliding_squares/sliding-squares.html 
+  image: sliding_squares.png
