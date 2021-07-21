@@ -2,13 +2,13 @@
   link: https://www.parkertimmins.com/lambda_interpreter/
   image: lambda.jpg
 - name: Dronograph 
-  link: http://www.parkertimmins.com/dronograph/  # needs to be http since map server is http
+  link: https://www.parkertimmins.com/dronograph/ 
   image: dronograph.jpg
 - name: Fractal Explorer 
   link: https://www.parkertimmins.com/fractal-explorer/ 
   image: fractal_explorer.png
 - name: Austin Aerial Imagery 1940
-  link: https://www.parkertimmins.com/austin-aerial-imagery/austin.html
+  link: http://www.parkertimmins.com/austin-aerial-imagery/austin.html  # needs to be http since map server is http
   image: austin_maps.jpg
 - name: Sliding Squares 
   link: https://www.parkertimmins.com/toy-shop/sliding_squares/sliding-squares.html 
