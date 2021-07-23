@@ -235,34 +235,45 @@ function drawCanvas() {
 
 
 
-function getCursorPosition(canvas, event) {
+function getCursorPosition(canvas, e) {
     const rect = canvas.getBoundingClientRect()
-    const x = event.clientX - rect.left
-    const y = event.clientY - rect.top
+    let x;
+    let y; 
+    if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend'){
+        const touch = e.touches[0];
+        x = touch.clientX - rect.left;
+        y = touch.clientY - rect.top;
+    } else if (e.type == 'mousedown' || e.type == 'mouseup' || e.type == 'mousemove') {
+        x = e.clientX - rect.left;
+        y = e.clientY - rect.top;
+    }
+
     return [x, y]
 }
 
 let movingAB = false
 let movingCD = false
-canvas.addEventListener('mousedown', function(e) {
+
+function holdMouse(e) {
+    e.preventDefault();
     const [canvasX, canvasY] = getCursorPosition(canvas, e)
     const distAB = distance(...gridToCanvas(a, b), canvasX, canvasY) 
     const distCD  = distance(...gridToCanvas(c, d), canvasX, canvasY) 
-    
-    // 5px circle ? :shrug
-    if (distAB < 10) {  
+   
+    // 20px circle ? :shrug
+    if (distAB < 20) {  
         movingAB = true
-    } else if (distCD < 10) {
+    } else if (distCD < 20) {
         movingCD = true
     }
-})
+}
 
-canvas.addEventListener('mouseup', function(e) {
+function releaseMouse(e) {
     movingAB = false
     movingCD = false
-})
+}
 
-canvas.addEventListener('mousemove', function(e) {
+function moveMouse(e) {
     if (movingAB) {
         [a, b] = canvasToGrid(...getCursorPosition(canvas, e))
         drawCanvas();
@@ -270,7 +281,17 @@ canvas.addEventListener('mousemove', function(e) {
         [c, d] = canvasToGrid(...getCursorPosition(canvas, e))
         drawCanvas();
     }
-})
+}
+
+// handlers for regular mouse
+canvas.addEventListener('mousedown', holdMouse);
+canvas.addEventListener('mousemove', moveMouse); 
+canvas.addEventListener('mouseup', releaseMouse)
+
+// handlers for mobile
+canvas.addEventListener('touchstart', holdMouse);
+canvas.addEventListener('touchmove', moveMouse); 
+canvas.addEventListener('touchend', releaseMouse)
 
 document.getElementById('swaporder').addEventListener('click', function(e) {
     [a, b, c, d] = [c, d, a, b] 
