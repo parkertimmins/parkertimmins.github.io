@@ -11,7 +11,7 @@ $$(a + bi)(c + di) = ac + adi + bci + bdi^2 = ac - bd + (ad + bc)i $$
 
 The following is an attempt to get some intuition about the meaning behind these symbols.
 
-Let's start by dispensing with then i-notation. As far as I'm concerned we're just working on a 2d plane. So using cartesian coordinates, the formula for complex multiplication now looks like: 
+Let's start by dispensing with the i-notation. As far as I'm concerned we're just working on a 2d plane. So using cartesian coordinates, the formula for complex multiplication now looks like: 
 $$(a, b)(c, d) = (ac - bd, ad + bc)$$
 
 But that's not much better, there must be some geometric interpretation to make sense of this way of doing multiplication 🤔.
