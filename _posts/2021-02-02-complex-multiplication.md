@@ -117,7 +117,7 @@ $$ a(c, d) + b(-d, a) = (ac, ad) + (-bd, ba) = (ac - bd, ad + ba) $$
 
 which was the original formula we were trying to make sense of.
 
-We can see that each piece of the equation result shows up in the image below. The $$ ac $$ is all the green segments along the bottom orange segment, heading to the right. 
+We can see that each piece of the equation result shows up in the image below. The $$ ac $$ is all the green horizontal segments along the bottom orange segment, heading to the right. 
 The $$ -bd $$ is all the green horizontal segments along the top orange segment, going back to the left. The $$ ad $$ and $$ bc $$ are the vertical segments along the bottom and top orange segment respectively; these two piece always head in the same direction, hence there is no negative sign.
 
 
