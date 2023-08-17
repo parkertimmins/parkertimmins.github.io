@@ -1,3 +1,12 @@
+- name: Austin Aerial Imagery 1940
+  link: http://www.parkertimmins.com/austin-aerial-imagery/austin.html  # needs to be http since map server is http
+  image: austin_maps.jpg
+- name: Celestial GPS
+  link: https://www.parkertimmins.com/celestial-gps
+  image: celestial_gps.png
+- name: Moon Lander (WIP)
+  link: https://www.parkertimmins.com/moon-lander
+  image: moon-lander.jpg
 - name: Lambda Interpreter 
   link: https://www.parkertimmins.com/lambda_interpreter/
   image: lambda.jpg
@@ -6,10 +15,7 @@
   image: dronograph.jpg
 - name: Fractal Explorer 
   link: https://www.parkertimmins.com/fractal-explorer/ 
-  image: fractal_explorer.png
-- name: Austin Aerial Imagery 1940
-  link: http://www.parkertimmins.com/austin-aerial-imagery/austin.html  # needs to be http since map server is http
-  image: austin_maps.jpg
+  image: fractal_explorer.jpg
 - name: Sliding Squares 
   link: https://www.parkertimmins.com/toy-shop/sliding_squares/sliding-squares.html 
   image: sliding_squares.png
