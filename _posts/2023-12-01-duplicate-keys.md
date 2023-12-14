@@ -21,6 +21,7 @@ A [recent paper](https://madoc.bib.uni-mannheim.de/62365/1/p18-flachs.pdf) propo
 This algorithm groups tuples that share keys into sub-lists within each hash table collision list. 
 As this technique shows promise, we investigate it in a realistic join operator. 
 Specifically, we combine the 3D algorithm with a hash join based on that of the [Umbra database](https://umbra-db.com/).
+
 Unfortunately, the initial combination of these systems was not an improvement over the Umbra hash join. 
 However, by estimating the number of unique keys and setting the hash directory size based on this value, we achieved up to a 77% speedup over the baseline.
 Based on these results, we also present a technique for optimizing the hash directory size in a standard chained hash join. 
