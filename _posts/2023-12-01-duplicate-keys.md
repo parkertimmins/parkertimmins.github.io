@@ -12,7 +12,7 @@ During the completion of this work, I was advised by Philipp Fent.
 Below, I've included the abstract of the paper, along with a link to the full document.
 
 
-### Abstact
+### Abstract
 
 Hash joins are the dominant join algorithm in modern database systems. 
 Despite their high performance, they are not without weaknesses. 
